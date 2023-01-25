@@ -1,0 +1,24 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:'100%';
+    padding: 0px 15%;
+}
+.headeText {
+    text-align: center;
+    line-height: 24px;
+    color: #737373;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.proceedImage {
+    cursor:pointer;
+    margin-top:20px;
+}
+.footer {
+    margin-top: auto;
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+}

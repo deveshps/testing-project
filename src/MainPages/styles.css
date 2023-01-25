@@ -1,0 +1,134 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:96%;
+    position: sticky;
+    top:10px;
+}
+.headerTextWrapper {
+    margin-left: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    justify-content: space-between;
+}
+.headerTextOneWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* footer */
+
+.footerWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:96%;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 10px;
+}
+/* class styles */
+.classWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    /* align-items: center; */
+}
+.imageWrapper {
+    border-bottom: 1px solid #E2DFE6;
+    width:98%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.bodyWrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.bodyRightSection {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+}
+.bodyHeaderPrimary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.bodyHeaderSecondary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:5px 0px;
+}
+.bodyHeaderPrimaryText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bodyLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+    margin:5px 0px;
+}
+.bodyImage {
+    background-color: #EEEFEA;
+    border-radius: 20px;
+    display: flex;
+    width:96%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10px 0px;
+}
+.bodyImageSubSection {
+    display: flex;
+    flex-direction: column;
+    width:97%;
+    justify-content: center;
+    align-items: center;
+}
+.bodyLowerLink {
+    white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+    background-color: #1D9BF0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:97%;
+    padding: 10px;
+}
+.bodyFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.bodyFooterSubWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.detailPageWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.detailPageFooterWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    position: sticky;
+    bottom:0px;
+}
