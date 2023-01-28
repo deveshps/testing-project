@@ -18,7 +18,7 @@ const Body = ({data,setSelectedItem}) => {
                             <div onClick={() => clickHandler(data)} className="bodyImageSubSection">
                             <img src={data.image} alt="MainImage"/>
                             <div className="bodyLowerLink">
-                                <a style={{backgroundColor:"#1D9BF0",color:"#ffffff",width:200}} href={data.link}>{data.link}</a>
+                                <a style={{backgroundColor:"#1D9BF0",color:"#ffffff"}} href={data.link}>{data.link}</a>
                             </div>
                             </div>
                         </div>
