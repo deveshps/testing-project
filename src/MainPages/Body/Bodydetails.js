@@ -34,7 +34,7 @@ return <div style={{padding:"10px 0px 0px"}}>
                 <UpperBody quantityHandler={quantityHandler} quantity={quantity}/>
                 <LowerBody />
                 <div className="detailPageFooterWrapper">
-                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy</div>
+                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy <span style={{marginLeft:15}}>{quantity * 80.88}</span></div>
                 </div>
             </div>
             <Modal isOpen={isModalOpen} setModal={setModal} otpVerified={otpVerified}/>
