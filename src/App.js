@@ -3,6 +3,7 @@ import {Routes,Route} from "react-router-dom"
 import './App.css';
 import FirstTimePage from './FirstTimePage';
 import BodyDetails from "./MainPages/Body/Bodydetails";
+import BodyDetailsReview from "./MainPages/Body/BodyDetailsReview";
 import MainPage from "./MainPages/MainPage";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<FirstTimePage />}/>
       <Route path="/main-page" element={<MainPage />} />
       <Route path="/main-page/details" element={<BodyDetails />} />
+      <Route path="/main-page/details-review" element={<BodyDetailsReview />} />
       <Route path="*" element={<FirstTimePage />}/>
     </Routes>
     </>
