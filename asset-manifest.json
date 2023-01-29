@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/rezolve-assigment/static/css/main.a917932e.css",
-    "main.js": "/rezolve-assigment/static/js/main.c687ae0f.js",
+    "main.js": "/rezolve-assigment/static/js/main.716a6118.js",
     "static/js/787.28cb0dcd.chunk.js": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js",
     "static/media/shirtImage.png": "/rezolve-assigment/static/media/shirtImage.9e96c3866d022400248c.png",
     "static/media/levis-tshirt.png": "/rezolve-assigment/static/media/levis-tshirt.6f933f12a35d40c8344c.png",
     "static/media/tshirtImage.png": "/rezolve-assigment/static/media/tshirtImage.30d706db39e5b72199c5.png",
+    "static/media/keypad-icon.png": "/rezolve-assigment/static/media/keypad-icon.5f0dd4db7c85e9743b0c.png",
+    "static/media/successfully-icon.png": "/rezolve-assigment/static/media/successfully-icon.6ef1549d497a726cd757.png",
     "index.html": "/rezolve-assigment/index.html",
     "main.a917932e.css.map": "/rezolve-assigment/static/css/main.a917932e.css.map",
-    "main.c687ae0f.js.map": "/rezolve-assigment/static/js/main.c687ae0f.js.map",
+    "main.716a6118.js.map": "/rezolve-assigment/static/js/main.716a6118.js.map",
     "787.28cb0dcd.chunk.js.map": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a917932e.css",
-    "static/js/main.c687ae0f.js"
+    "static/js/main.716a6118.js"
   ]
 }
