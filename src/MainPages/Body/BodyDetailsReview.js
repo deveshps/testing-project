@@ -9,7 +9,7 @@ const BodyDetailsReview = () => {
     const submitHandler = () => {
         if(termCond){
             setTermCond(false)
-            navigate("/main-page")
+            navigate("/purchage-item")
         }
     }
     return <div>

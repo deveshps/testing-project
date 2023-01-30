@@ -1,3 +1,4 @@
+import {useSelector,useDispatch} from "react-redux"
 import Header from "../Header";
 import ArrowDownIcon from "../../images/arrow-down-icon.png";
 import PlusIcon from "../../images/plus-icon.png";
@@ -7,8 +8,9 @@ import Modal from "./modal";
 import { useNavigate } from "react-router";
 
 
-const BodyDetails = ({setSelectedItem,selectedItem}) => {
+const BodyDetails = () => {
     const navigate = useNavigate();
+    const selectedItem = useSelector((state) => state.items.selectedItem);
     const [quantity,setQuantity] = useState(1);
     const [isModalOpen,setModal] = useState(false)
     const quantityHandler = (type) => {
@@ -18,7 +20,7 @@ const BodyDetails = ({setSelectedItem,selectedItem}) => {
         setQuantity(quantity -1)
     }
     const clickHandler = () => {
-        setSelectedItem({})
+        navigate(-1)
     }
     const puchageHandler = () => {
         setModal(true)
@@ -27,14 +29,14 @@ const BodyDetails = ({setSelectedItem,selectedItem}) => {
         setModal(false)
         navigate("/main-page/details-review")
     }
-return <div style={{padding:"10px 0px 0px"}}>
+return <div style={{padding:"10px"}}>
             <Header tweets="23.6K" title="Levi's®" clickHandler={clickHandler}/>
             <div className="detailPageWrapper">
                 <img src={selectedItem.image} style={{margin:10,borderRadius:5}} alt="images"/>
-                <UpperBody quantityHandler={quantityHandler} quantity={quantity}/>
+                <UpperBody selectedItem={selectedItem} quantityHandler={quantityHandler} quantity={quantity}/>
                 <LowerBody />
                 <div className="detailPageFooterWrapper">
-                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy <span style={{marginLeft:15}}>{quantity * 80.88}</span></div>
+                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy <span style={{marginLeft:15}}>{quantity * selectedItem.price}</span></div>
                 </div>
             </div>
             <Modal isOpen={isModalOpen} setModal={setModal} otpVerified={otpVerified}/>
@@ -44,12 +46,12 @@ return <div style={{padding:"10px 0px 0px"}}>
 
 export default BodyDetails
 
-const UpperBody = ({quantityHandler,quantity}) => {
+const UpperBody = ({quantityHandler,selectedItem,quantity}) => {
     return  <div style={{borderBottom:"4px solid #F4F4F4"}}>
-    <div style={{fontSize:18,fontWeight:500,margin:"10px 20px"}}>New Original Sweatshirt</div>
+    <div style={{fontSize:18,fontWeight:500,margin:"10px 20px"}}>{selectedItem.name}</div>
     <div style={{display:"flex",flexDirection:"row",alignItems:"center",borderBottom:"2px solid #F4F4F4",marginBottom:15,paddingBottom:15,marginLeft:20}}>
-        <div style={{fontWeight:600,color:"#041F63"}}>$80.88</div>
-        <div style={{marginLeft:20,fontWeight:400,color:"#7F7F7F"}}>$80.88</div>
+        <div style={{fontWeight:600,color:"#041F63"}}>${selectedItem.price}</div>
+        <div style={{marginLeft:20,fontWeight:400,color:"#7F7F7F"}}>${selectedItem.price}</div>
     </div>
     <div style={{marginLeft:20,fontSize:12,color:"#ACACAC",marginBottom:5}}>Select Quantity</div>
     <div style={{marginLeft:20,marginBottom:20,padding:"10px 5px",backgroundColor:"#FAFAFD",borderRadius:10,display:"flex",flexDirection:"row",justifyContent:"space-between",alignItems:"center",width:100}}>
