@@ -12,17 +12,24 @@ import PaypalIcon from "../images/paypal-icon.png";
 import GpayIcon from "../images/gpay-icon.png";
 import ExpandIcon from "../images/expand-icon.png";
 import CollapseIcon from "../images/collapse-icon.png";
+import RezolveBuyIcon from "../images/rezolveBuy-Icon.png";
+
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const PurchageItem = () => {
     const [quantity,setQuantity] = useState(1);
     const [isPriceExpand,setPriceExpand] = useState(false);
     const selectedItem = useSelector((state) => state.items.selectedItem);
+    const navigate = useNavigate();
     const quantityHandler = (type) => {
         if(type === 'add' && quantity < 3)
         setQuantity(quantity + 1)
         else if(type === "sub" && quantity > 1)
         setQuantity(quantity -1)
+    }
+    const submitHandler = () => {
+        navigate("/main-page")
     }
     return <div style={{padding:10}}>
         <Header />
@@ -132,7 +139,10 @@ const PurchageItem = () => {
             </div>
         </div> || null}
     </div>
-    <div onClick={() => {}} style={{backgroundColor:"#041F63",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy <span style={{marginLeft:15}}>${(Number(quantity * selectedItem.price) + Number(((selectedItem.price * quantity *12.35)/100).toFixed(2))).toFixed(2)}</span></div>
+    <div onClick={() => submitHandler()} style={{backgroundColor:"#041F63",textAlign:"center",padding:"10px",color:"white",borderRadius:10,display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
+        <img src={RezolveBuyIcon}  alt="rezolveIcon"/>
+        <div style={{marginLeft:10}}>Instant Buy <span style={{marginLeft:15}}>${(Number(quantity * selectedItem.price) + Number(((selectedItem.price * quantity *12.35)/100).toFixed(2))).toFixed(2)}</span></div>
+    </div>
     </div>
 }
 

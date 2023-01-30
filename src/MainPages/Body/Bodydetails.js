@@ -1,8 +1,9 @@
-import {useSelector,useDispatch} from "react-redux"
+import {useSelector} from "react-redux"
 import Header from "../Header";
 import ArrowDownIcon from "../../images/arrow-down-icon.png";
 import PlusIcon from "../../images/plus-icon.png";
 import MinuseIcon from "../../images/minuse-icon.png";
+import RezolveBuyIcon from "../../images/rezolveBuy-Icon.png";
 import { useState } from "react";
 import Modal from "./modal";
 import { useNavigate } from "react-router";
@@ -36,7 +37,10 @@ return <div style={{padding:"10px"}}>
                 <UpperBody selectedItem={selectedItem} quantityHandler={quantityHandler} quantity={quantity}/>
                 <LowerBody />
                 <div className="detailPageFooterWrapper">
-                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10}}>Instant Buy <span style={{marginLeft:15}}>{quantity * selectedItem.price}</span></div>
+                    <div onClick={puchageHandler} style={{backgroundColor:"#041F63",width:"100%",textAlign:"center",padding:"10px",color:"white",borderRadius:10,display:"flex",flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
+                        <img src={RezolveBuyIcon}  alt="rezolveIcon"/>
+                        <div style={{marginLeft:10}}>Instant Buy</div>
+                    </div>
                 </div>
             </div>
             <Modal isOpen={isModalOpen} setModal={setModal} otpVerified={otpVerified}/>
