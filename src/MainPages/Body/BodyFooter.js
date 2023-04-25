@@ -93,7 +93,7 @@ const BodyFooter = ({data}) => {
               url:"wqertyrewqertew.csv", // can be anything or any url
               text: `${"Temperature"}`,
               title: `${"Temperature"} Experiment Data`, // subject
-              files:[{file:file,name:"a.csv",fileName:"qwe.csv"}]
+              files:[file]
             });
             console.log("data has been shared Successfully!")
           } catch (error) {
