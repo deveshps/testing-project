@@ -91,7 +91,7 @@ const BodyFooter = ({data}) => {
             console.log("???????? ",file)
             await navigator.share({
               url:file,
-              name:"asdfgName",
+            //   name:"asdfgName",
               text: `${"Temperature"}`, 
               title: `${"Temperature"} Experiment Data`, //subject
               files:[file]
