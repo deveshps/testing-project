@@ -85,7 +85,7 @@ const BodyFooter = ({data}) => {
             return;
           }
           try {
-            const file = new File(csv, "abc.csv");
+            const file = new File([csv], "abc.csv");
             console.log("???????? ",file)
             await navigator.share({
               url:file,
