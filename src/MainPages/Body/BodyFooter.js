@@ -6,11 +6,11 @@ import ShareIcon from "../../images/share-icon.png"
 const BodyFooter = ({data}) => {
     const handleShare = async () => {
         const item = {
-            "name": "T042323-1355-L",
+            name: "T042323-1355-L",
             "date": "04-23-2023",
             "time": "01.55PM",
-            data:["a","b","c"],
-            "datas": [
+            data:[{a:"as"},"b","c"],
+            datas: [
                 {
                     "time": 0,
                     "temp": 0
@@ -61,12 +61,30 @@ const BodyFooter = ({data}) => {
                 }
             ]
         }
+        var csv = "";
+        const header = ["Time","Temperature ( C )"]
+        if (header) {
+          for (let one of header) {
+            csv += one + ",";
+          }
+          csv += "\n";
+        }
+        // csv += data.name + '\n';
+        if (item && item.datas) {
+          for(let one of item.datas){
+            if(header && header[1] === "Temperature ( C )"){
+              csv += one.time;
+              csv += "," + one.temp;
+            }
+            csv += "\n";
+          }
+        }
         if (!navigator.canShare) {
             console.log("Your browser doesn't support the Web Share API.")
             return;
           }
           try {
-            const file = new File(item?.data, `${item?.name}.csv`, {type: "text/plain"});
+            const file = new File(csv, "abc.csv");
             console.log("???????? ",file)
             await navigator.share({
               url:file,
