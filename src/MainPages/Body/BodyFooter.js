@@ -90,9 +90,9 @@ const BodyFooter = ({data}) => {
             const file = new File([csv], "abc.csv",{type:"text/csv"});
             console.log("???????? ",file)
             await navigator.share({
-              url:file,
-              title: `${"Temperature"}`,
-              text: `${"Temperature"} Experiment Data`,
+              url:"wqertyrewqertew.csv",
+              text: `${"Temperature"}`,
+              title: `${"Temperature"} Experiment Data`,
               files:[file]
             });
             console.log("data has been shared Successfully!")
