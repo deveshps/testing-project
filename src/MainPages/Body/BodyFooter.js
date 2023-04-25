@@ -9,7 +9,8 @@ const BodyFooter = ({data}) => {
             "name": "T042323-1355-L",
             "date": "04-23-2023",
             "time": "01.55PM",
-            "data": [
+            data:["a","b","c"],
+            "datas": [
                 {
                     "time": 0,
                     "temp": 0
@@ -65,10 +66,10 @@ const BodyFooter = ({data}) => {
             return;
           }
           try {
-            const file = new File(item?.data, `${item?.name}.csv`, {type: "text/csv"});
+            const file = new File(item?.data, `${item?.name}.csv`, {type: "text/plain"});
             console.log("???????? ",file)
             await navigator.share({
-              url:item,
+              url:file,
               title: `${"Temperature"}`,
               text: `${"Temperature"} Experiment Data`,
               files:[file]
