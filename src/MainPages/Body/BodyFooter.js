@@ -62,6 +62,8 @@ const BodyFooter = ({data}) => {
             ]
         }
         var csv = "";
+        csv += "Calibrated and Tested";
+        csv += "\n";
         const header = ["Time","Temperature ( C )"]
         if (header) {
           for (let one of header) {
@@ -85,7 +87,7 @@ const BodyFooter = ({data}) => {
             return;
           }
           try {
-            const file = new File([csv], "abc.csv",{type:"text/csv"});
+            const file = new File([csv], "abc.csv",{type:"text/csv",name:"qwertyhgfdsafdgd.csv"});
             console.log("???????? ",file)
             await navigator.share({
               url:file,
