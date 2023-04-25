@@ -80,14 +80,13 @@ const BodyFooter = ({data}) => {
           }
         }
         console.log("??ASSSSSSS ",csv)
-        const file = new File([csv], "devesh.csv" , {type:"text/csv/plain"});
-        console.log("???????? ",file)
         if (!navigator.canShare) {
             console.log("Your browser doesn't support the Web Share API.")
             return;
           }
           try {
-         
+            const file = new File([csv], "devesh.csv" , {type:"text/csv"});
+            console.log("???????? ",file)
             await navigator.share({
               url:"wqertyrewqertew.csv", // can be anything or any url
               text: `${"Temperature"}`,
