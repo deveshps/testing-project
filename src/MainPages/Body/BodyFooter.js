@@ -87,13 +87,13 @@ const BodyFooter = ({data}) => {
             return;
           }
           try {
-            const file = new File([csv], "abc.csv",{type:"text/csv"});
+            const file = new File([csv], "abc.csv",{type:"text/csv",fileName:"1234567.csv"});
             console.log("???????? ",file)
             await navigator.share({
-              url:"wqertyrewqertew.csv",
+              url:"wqertyrewqertew.csv", // can be anything or any url
               text: `${"Temperature"}`,
-              title: `${"Temperature"} Experiment Data`,
-              files:[file]
+              title: `${"Temperature"} Experiment Data`, // subject
+              files:[{file:file,name:"a.csv",fileName:"qwe.csv"}]
             });
             console.log("data has been shared Successfully!")
           } catch (error) {
