@@ -70,7 +70,6 @@ const BodyFooter = ({data}) => {
           csv += "\n";
         }
         // csv += data.name + '\n';
-        console.log("??ASSSSSSS ",csv)
         if (item && item.datas) {
           for(let one of item.datas){
             if(header && header[1] === "Temperature ( C )"){
@@ -80,6 +79,7 @@ const BodyFooter = ({data}) => {
             csv += "\n";
           }
         }
+        console.log("??ASSSSSSS ",csv)
         if (!navigator.canShare) {
             console.log("Your browser doesn't support the Web Share API.")
             return;
