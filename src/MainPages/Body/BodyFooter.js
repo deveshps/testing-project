@@ -100,7 +100,7 @@ const BodyFooter = ({data}) => {
     }
     const handleShare = async (title) => {
          const item = {
-            name: "T042323-1355-L",
+            name: "Chal hatt bhen ki l##i",
             "date": "04-23-2023",
             "time": "01.55PM",
             data: [
