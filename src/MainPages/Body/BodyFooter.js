@@ -99,62 +99,76 @@ const BodyFooter = ({data}) => {
           }
     }
     const handleShare = async (title) => {
-         const item = {
-            name: "Chal hatt bhen ki l##i",
-            "date": "04-23-2023",
-            "time": "01.55PM",
-            data: [
-                {
-                    "time": 0,
-                    "temp": 0
-                },
-                {
-                    "time": 1,
-                    "temp": 8.1
-                },
-                {
-                    "time": 2,
-                    "temp": 16.2
-                },
-                {
-                    "time": 3,
-                    "temp": 24.2
-                },
-                {
-                    "time": 4,
-                    "temp": 32
-                },
-                {
-                    "time": 5,
-                    "temp": 39.5
-                },
-                {
-                    "time": 6,
-                    "temp": 46.6
-                },
-                {
-                    "time": 7,
-                    "temp": 53.4
-                },
-                {
-                    "time": 8,
-                    "temp": 59.8
-                },
-                {
-                    "time": 9,
-                    "temp": 65.6
-                },
-                {
-                    "time": 10,
-                    "temp": 71
-                },
-                {
-                    "time": 11,
-                    "temp": 75.7
-                }
-            ]
+     
+         const item =  {
+    "name": "T061923-1129-M1",
+    "date": "06-19-2023",
+    "time": "11.29AM",
+    "data": [
+        {
+            "time": 0,
+            "temp": 0
+        },
+        {
+            "time": 1,
+            "temp": 8.1
+        },
+        {
+            "time": 2,
+            "temp": 16.2
+        },
+        {
+            "time": 3,
+            "temp": 24.2
+        },
+        {
+            "time": 4,
+            "temp": 32
+        },
+        {
+            "time": 5,
+            "temp": 39.5
+        },
+        {
+            "time": 6,
+            "temp": 46.6
+        },
+        {
+            "time": 7,
+            "temp": 53.4
+        },
+        {
+            "time": 8,
+            "temp": 59.8
+        },
+        {
+            "time": 9,
+            "temp": 65.6
+        },
+        {
+            "time": 10,
+            "temp": 71
+        },
+        {
+            "time": 11,
+            "temp": 75.7
+        },
+        {
+            "time": 12,
+            "temp": 79.8
+        },
+        {
+            "time": 13,
+            "temp": 83.2
         }
+    ]
+  }
         const selectedButton="temperature";
+          let storageTempData = JSON.stringify(item);
+        localStorage.setItem(
+        `temperature_data_T061923-1129-M1`,
+        storageTempData
+        );
     if(item){
       if (!navigator.canShare) {
         console.log("Your browser doesn't support the Web Share API.")
