@@ -166,9 +166,10 @@ const BodyFooter = ({data}) => {
         const selectedButton="temperature";
           let storageTempData = JSON.stringify(item);
         localStorage.setItem(
-        `temperature_data_T061923-1129-M1`,
+        `temperature_data_T061923-1130-M1`,
         storageTempData
         );
+        window.alert(`Data saved :- ${localStorage.getItem("temperature_data_T061923-1130-M1") ? "temperature_data_T061923-1130-M1" : "Not found"}`)
     if(item){
       if (!navigator.canShare) {
         console.log("Your browser doesn't support the Web Share API.")
