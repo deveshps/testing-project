@@ -961,13 +961,13 @@ const TemperatureGraph = React.memo(() => {
           mode:'x',
           limits:{
             y: {min: 0, max: 1000},
-            x: {min: 0, max:100 }
+            x: {min: 0, max:1000 }
           },
           onZoomStart: ({chart,event,point}) => {
             console.log("hammer", event);
             console.log("zoom point", point);
             console.log("chart zoom level ",chart.getZoomLevel())
-            if(event?.type === "wheel" && event?.wheelDelta < 0){
+            if(event?.type === "wheel" && event?.wheelDelta <= 0){
               return true
             }
             return chart.getZoomLevel() <= 13;
