@@ -2,8 +2,10 @@ import CommentIcon from "../../images/comment-icon.png"
 import LikeIcon from "../../images/arrow-icons.png"
 import HeartIcon from "../../images/heart-icon.png"
 import ShareIcon from "../../images/share-icon.png"
+import { useNavigate } from "react-router"
 
 const BodyFooter = ({data}) => {
+    const navigate = useNavigate();
     const handleShares = async () => {
         const item = {
             name: "T042323-1355-L",
@@ -237,7 +239,7 @@ const BodyFooter = ({data}) => {
         <div style={{marginLeft:5,fontSize:12,color:"#869097"}}>{data.like}</div>
     </div>
     <div className="bodyFooterSubWrapper">
-        <img src={HeartIcon} style={{width:15}} alt="heart"/>
+        <img onClick = {() => navigate("/graph-page")} src={HeartIcon} style={{width:15}} alt="heart"/>
         <div style={{marginLeft:5,fontSize:12,color:"#869097"}}>{data.heart}</div>
     </div>
     <div className="bodyFooterSubWrapper">
