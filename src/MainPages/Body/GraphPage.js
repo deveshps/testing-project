@@ -996,7 +996,7 @@ const TemperatureGraph = React.memo(() => {
   // },[data])
   return (
     <>
-    <div style={{width:250,margin:10}}>
+    <div style={{width:350,margin:10,marginTop:50}}>
       <Line
         data={chatData}
         options={options}
