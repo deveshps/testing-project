@@ -901,7 +901,7 @@ const TemperatureGraph = React.memo(() => {
     172,
     173
 ]
-  // console.log("???????????? data",data," showPoint :- ",showPoint,"capturePoint ",capturePoint," title ",title, "temperatureUnit ",temperatureUnit," maxTempValue ",maxTempValue," labels ",labels)
+  console.log("???????????? data",data," showPoint :- ",showPoint,"capturePoint ",capturePoint," title ",title, "temperatureUnit ",temperatureUnit," maxTempValue ",maxTempValue," labels ",labels)
   const [graphData ,setGraphData] = useState(data);
   const [enableZoom, setEnableZoom] = useState(true);
   const yAxisScale =  title === "Voltage"  ? {min: -12,max: 12,stepSize:1} : {min:0,max:maxTempValue ? (temperatureUnit === "c" ? maxTempValue : Number(Number((9 / 5) * Number(maxTempValue) + 32).toFixed(0) )) : 50};
