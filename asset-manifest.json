@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rezolve-assigment/static/css/main.bc23bb2c.css",
-    "main.js": "/rezolve-assigment/static/js/main.8d031a7f.js",
+    "main.js": "/rezolve-assigment/static/js/main.abcd8448.js",
     "static/js/787.28cb0dcd.chunk.js": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js",
     "static/media/shirtImage.png": "/rezolve-assigment/static/media/shirtImage.9e96c3866d022400248c.png",
     "static/media/levis-tshirt.png": "/rezolve-assigment/static/media/levis-tshirt.6f933f12a35d40c8344c.png",
@@ -10,11 +10,11 @@
     "static/media/successfully-icon.png": "/rezolve-assigment/static/media/successfully-icon.6ef1549d497a726cd757.png",
     "index.html": "/rezolve-assigment/index.html",
     "main.bc23bb2c.css.map": "/rezolve-assigment/static/css/main.bc23bb2c.css.map",
-    "main.8d031a7f.js.map": "/rezolve-assigment/static/js/main.8d031a7f.js.map",
+    "main.abcd8448.js.map": "/rezolve-assigment/static/js/main.abcd8448.js.map",
     "787.28cb0dcd.chunk.js.map": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc23bb2c.css",
-    "static/js/main.8d031a7f.js"
+    "static/js/main.abcd8448.js"
   ]
 }
