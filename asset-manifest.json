@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/testing-project/static/css/main.bc23bb2c.css",
-    "main.js": "/testing-project/static/js/main.38accc62.js",
-    "static/js/787.28cb0dcd.chunk.js": "/testing-project/static/js/787.28cb0dcd.chunk.js",
-    "static/media/shirtImage.png": "/testing-project/static/media/shirtImage.9e96c3866d022400248c.png",
-    "static/media/levis-tshirt.png": "/testing-project/static/media/levis-tshirt.6f933f12a35d40c8344c.png",
-    "static/media/tshirtImage.png": "/testing-project/static/media/tshirtImage.30d706db39e5b72199c5.png",
-    "static/media/keypad-icon.png": "/testing-project/static/media/keypad-icon.5f0dd4db7c85e9743b0c.png",
-    "static/media/successfully-icon.png": "/testing-project/static/media/successfully-icon.6ef1549d497a726cd757.png",
-    "index.html": "/testing-project/index.html",
-    "main.bc23bb2c.css.map": "/testing-project/static/css/main.bc23bb2c.css.map",
-    "main.38accc62.js.map": "/testing-project/static/js/main.38accc62.js.map",
-    "787.28cb0dcd.chunk.js.map": "/testing-project/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/rezolve-assigment/static/css/main.bc23bb2c.css",
+    "main.js": "/rezolve-assigment/static/js/main.88051b83.js",
+    "static/js/787.28cb0dcd.chunk.js": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js",
+    "static/media/shirtImage.png": "/rezolve-assigment/static/media/shirtImage.9e96c3866d022400248c.png",
+    "static/media/levis-tshirt.png": "/rezolve-assigment/static/media/levis-tshirt.6f933f12a35d40c8344c.png",
+    "static/media/tshirtImage.png": "/rezolve-assigment/static/media/tshirtImage.30d706db39e5b72199c5.png",
+    "static/media/keypad-icon.png": "/rezolve-assigment/static/media/keypad-icon.5f0dd4db7c85e9743b0c.png",
+    "static/media/successfully-icon.png": "/rezolve-assigment/static/media/successfully-icon.6ef1549d497a726cd757.png",
+    "index.html": "/rezolve-assigment/index.html",
+    "main.bc23bb2c.css.map": "/rezolve-assigment/static/css/main.bc23bb2c.css.map",
+    "main.88051b83.js.map": "/rezolve-assigment/static/js/main.88051b83.js.map",
+    "787.28cb0dcd.chunk.js.map": "/rezolve-assigment/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc23bb2c.css",
-    "static/js/main.38accc62.js"
+    "static/js/main.88051b83.js"
   ]
 }
