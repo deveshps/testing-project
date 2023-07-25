@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testing-project/static/css/main.86405b04.css",
-    "main.js": "/testing-project/static/js/main.53612422.js",
+    "main.js": "/testing-project/static/js/main.7ed9ef74.js",
     "static/js/787.28cb0dcd.chunk.js": "/testing-project/static/js/787.28cb0dcd.chunk.js",
     "static/media/shirtImage.png": "/testing-project/static/media/shirtImage.9e96c3866d022400248c.png",
     "static/media/levis-tshirt.png": "/testing-project/static/media/levis-tshirt.6f933f12a35d40c8344c.png",
@@ -10,11 +10,11 @@
     "static/media/successfully-icon.png": "/testing-project/static/media/successfully-icon.6ef1549d497a726cd757.png",
     "index.html": "/testing-project/index.html",
     "main.86405b04.css.map": "/testing-project/static/css/main.86405b04.css.map",
-    "main.53612422.js.map": "/testing-project/static/js/main.53612422.js.map",
+    "main.7ed9ef74.js.map": "/testing-project/static/js/main.7ed9ef74.js.map",
     "787.28cb0dcd.chunk.js.map": "/testing-project/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86405b04.css",
-    "static/js/main.53612422.js"
+    "static/js/main.7ed9ef74.js"
   ]
 }
