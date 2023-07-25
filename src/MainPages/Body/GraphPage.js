@@ -968,6 +968,9 @@ const TemperatureGraph = React.memo(() => {
             y: {min: 0, max: 100},
             x: {min: 0, max:100 }
           },
+           onZoom:(e) => {
+            console.log("??>>>>>>>>>> on zoom start ",e?.chart)
+          },
           onZoomStart: ({chart,event,point}) => {
             console.log("hammer", event);
             console.log("zoom point", point);
@@ -977,6 +980,9 @@ const TemperatureGraph = React.memo(() => {
             }
             return chart.getZoomLevel() <= 13;
             },
+             onZoomComplete:(event) => {
+              console.log("ON ZOOM COMPLETE >>>>>>!@@@@@@@@@@:- ",event , " get zoom lewvel ",event?.chart?.getZoomLevel())
+            }
         },
         pan: {
           enabled: true,
