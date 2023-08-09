@@ -231,11 +231,11 @@ const BodyFooter = ({data}) => {
   };
     return <div className="bodyFooter">
     <div className="bodyFooterSubWrapper">
-        <img src={CommentIcon} style={{width:15}} alt="comment"/>
+        <img onClick={() => navigate("/highchart-graph-page")} src={CommentIcon} style={{width:15}} alt="comment"/>
         <div style={{marginLeft:5,fontSize:12,color:"#869097"}}>{data.comment}</div>
     </div>
     <div className="bodyFooterSubWrapper">
-        <img src={LikeIcon} style={{width:15}} alt="like"/>
+        <img onClick={() => navigate("/apex-graph-page")} src={LikeIcon} style={{width:15}} alt="like"/>
         <div style={{marginLeft:5,fontSize:12,color:"#869097"}}>{data.like}</div>
     </div>
     <div className="bodyFooterSubWrapper">
