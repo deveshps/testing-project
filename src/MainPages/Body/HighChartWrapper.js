@@ -8,8 +8,11 @@ const HighChartWrapper = () => {
     const [data,setData] = useState([])
     const [capturepoint,setCapturepoint] = useState([])
     const [maxTempValue,setMaxTempValue] = useState(120)
+    const [isStart,setIsStart] = useState(false)
+
 
     const handleStart = () => {
+        setIsStart(true)
         setData([])
         setCapturepoint([])
         setMaxTempValue(120)
@@ -47,6 +50,7 @@ const HighChartWrapper = () => {
 
     const handleSTop = () => {
         clearInterval(timmer)
+        setIsStart(false)
     }
 
 console.log("??> ",data)
@@ -57,7 +61,7 @@ return <div style={{margin:20,marginTop:80,display:"flex",flexDirection:"row",al
         maxTempValue={maxTempValue}
         />
         <div>
-            <button onClick={handleStart} style={{marginRight:10,marginLeft:20,cursor:"pointer"}}>Start</button>
+            <button onClick={() => isStart ? {} : handleStart} style={{marginRight:10,marginLeft:20,cursor:setIsStart ? "not-allowed" :"pointer"}}>Start</button>
             <button onClick={handleSTop} style={{cursor:"pointer"}}>Stop</button>
         </div>
     </div>
