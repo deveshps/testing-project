@@ -61,7 +61,7 @@ return <div style={{margin:20,marginTop:80,display:"flex",flexDirection:"row",al
         maxTempValue={maxTempValue}
         />
         <div>
-            <button onClick={() => isStart ? {} : handleStart} style={{marginRight:10,marginLeft:20,cursor:setIsStart ? "not-allowed" :"pointer"}}>Start</button>
+            <button onClick={() => isStart ? {} : handleStart} style={{marginRight:10,marginLeft:20,cursor:isStart ? "not-allowed" :"pointer"}}>Start</button>
             <button onClick={handleSTop} style={{cursor:"pointer"}}>Stop</button>
         </div>
     </div>
