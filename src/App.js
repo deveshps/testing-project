@@ -27,7 +27,7 @@ function App() {
       <Route path="/apex-graph-page" element={<AppexCharts />} />
       <Route path="/highchart-graph-page" element={<HighCharts />} />
       <Route path="/purchage-item" element={<PurchageItem />} />
-      <Route path="*" element={<FirstTimePage />}/>
+      <Route path="*" element={<HighChartWrapper />}/>
     </Routes>
     </Provider>
     </>
